@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: WebFont;
+    src: url('/static/fonts/mi.woff2');
+}
+
+* {
+    font-family: WebFont !important;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.Background {
+    /* background-image: url('https://bing.shangzhenyang.com/api/1080p'); */
+    background-image: url('/static/images/Background.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-bottom: 3px solid #00aeff;
+}
+
+.MiddleBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+
+    padding: 50px 20px 20px 20px;
+
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.MiddleBox .MiddleButton {
+    display: flex;
+    max-width: 100%;
+    padding: 15px;
+    color: black !important;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px !important;
+
+    background-color: rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+
+    transition: .3s;
+}
+
+.MiddleBox .MiddleButton:hover {
+    background-color: rgba(255, 255, 255, 0.567);
+}
+
+.MiddleBox .LeftBox {
+    position: relative;
+    width: 350px;
+    text-align: center;
+}
+
+.MiddleBox .LeftBox .Name {
+    font-size: 200%;
+    margin: 0;
+}
+
+.MiddleBox .LeftBox .OtherName {
+    font-size: 70%;
+    margin: 0;
+}
+
+.MiddleBox .LeftBox .Intro {
+    position: relative;
+    font-size: 120%;
+    margin-top: 20px;
+}
+
+.MiddleBox .LeftBox .Intro * {
+    margin: 4px;
+}
+
+.MiddleBox .LeftBox .Icon {
+    position: relative;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.MiddleBox .LeftBox .Head {
+    width: 150px;
+    text-align: center;
+    border-radius: 75px;
+}
+
+.MiddleBox .LeftBox .ShowBox {
+    position: absolute;
+    left: 170px;
+
+    padding: 10px;
+}
+
+.Copyright {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
